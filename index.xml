@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cocobits Design System</title>
+    <link>https://cocobits.github.io/</link>
+    <description>Recent content on Cocobits Design System</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://cocobits.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cocobits Documentation</title>
+      <link>https://cocobits.github.io/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cocobits.github.io/</guid>
+      <description>Introduction Cocobits is a responsive CSS foundational system to build elegant web applications. Influenced by object-oriented CSS principles and functional CSS, interchangeable utility classes allow flexibility and consistency for any web application. Cocobits uses SASS variables and mixins and strives to meet the highest WCAG accessibility standards.
+ Highlights  Responsive, mobile-first and accessible by default Flexible and interchangeable utility classes Base-8 spacing for consistency and dynamic vertical and horizontal rhythm Font-size, line-height and weight options for readability Color system for meaningful content and interaction signals   Highlights  Responsive, mobile-first and accessible by default Flexible and interchangeable utility classes Base-8 spacing for consistency and dynamic vertical and horizontal rhythm Font-size, line-height and weight options for readability Color system for meaningful content and interaction signals    Introduction Hightlights Install  </description>
+    </item>
+    
+  </channel>
+</rss>
