@@ -28,16 +28,11 @@
     <body>
         
 <header class="py-3 px-3 bg-gray-700 gray-300">
-    <div class="container-lg container-xl">
-        <div class="d-grid grid-flow-col d-items-center">
-            <div class="d-flex d-items-center gap-flex-col-3">
-                <img class="height-5" src="https://cocobits.github.io/assets/cocobits_light_64px.png" alt="Cocobits icon">
-                <a class="text-decoration-none" href="https://cocobits.github.io/"><span class="h4 text-weight-normal white" style="letter-spacing: .05rem;">Cocobits</span></a>
-            </div>
-            <div class="d-grid grid-flow-col d-justify-end gap-6">
-                <a class="text-decoration-none text-weight-light" href="https://github.com/mileeme/cocobits"
-                    target="_blank">Github</a>
-            </div>
+    <div class="container-lg container-xl d-grid grid-flow-col">
+        <a class="text-decoration-none" href="https://cocobits.github.io/">Cocobits</a>
+        <div class="d-grid grid-flow-col d-justify-end gap-3">
+            <a class="text-decoration-none text-weight-light" href="https://cocobits.github.io/">Getting Started</a>
+            <a class="text-decoration-none text-weight-light" href="https://github.com/mileeme/cocobits" target="_blank">Github</a>
         </div>
     </div>
 </header>
@@ -51,15 +46,13 @@
 </nav>
 
         
-        <main  class="mx-3">
+        <main style="min-height: calc(100vh - 120px)">
             
-            
-            <div class="container-lg container-xl d-md-flex gap-xl-col-3 position-relative">
-                
+            <div class="container-lg container-xl mx-3 d-md-flex gap-xl-col-3 position-relative">
                 
                 <nav class="py-6 d-none d-md-block col-md-3 col-xl-2 zindex-md-01 position-sticky d-self-flex-start" style="top: 40px;">
-                    <div id="sideNav" class="d-grid grid-flow-row d-container-center gap-row-2">
-                        <a class="h6 text-decoration-none" href="https://cocobits.github.io/">Getting Started</a>
+                    <div class="d-grid grid-flow-row d-container-center gap-row-2">
+                        <a class="h6 text-decoration-none is--active" href="https://cocobits.github.io/">Getting Started</a>
                         <a class="h6 text-decoration-none" href="/layout">Layout</a>
                         <a class="h6 text-decoration-none" href="/spacing">Spacing</a>
                         <a class="h6 text-decoration-none" href="/typography">Typography</a>
@@ -67,23 +60,19 @@
                         <a class="h6 text-decoration-none" href="/color">Color</a>
                         <div class="h6 text-decoration-none gray-300">Components <span
                                 class="bg-blue-050 blue-200 text-small py-1 px-2 rounded-4">Soon</span></div>
-                        <div class="h6 text-decoration-none gray-300">Functions <span
+                        <div class="h6 text-decoration-none gray-300">Animation <span
                                 class="bg-blue-050 blue-200 text-small py-1 px-2 rounded-4">Soon</span></div>
                     </div>
                 </nav>
                 
                 
-                
 
 <div class="py-6 col-md-9 col-xl-7">
     <section class="anchor" id="colorDefault">
-        <h1>Color</h1>
-        <p class="text-lead">Cocobits offers three tints to use for many use cases and default color utility classes meet WCAG's AAA
-            standards. Colors can be applied to backgrounds, texts and borders.</p>
-    </section>
-    <section>
-        <h2>Default Colors</h2>
+        <h2>Color</h2>
         <hr class="divider">
+        <p>Cocobits offers three tints to use for many use cases and default color utility classes meet WCAG's AAA
+            standards. Colors can be applied to backgrounds, texts and borders.</p>
         <table class="width-full table-border-collapse my-3">
             <thead>
                 <tr class="border-bottom">
@@ -160,20 +149,6 @@
                     <td class="d-flex d-items-center gap-flex-col-2">
                         <div class="bg-gray-200 rounded-1" style="height: 14px; width: 14px;"></div>
                         <div>$gray-200</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><code>white</code></td>
-                    <td class="d-flex d-items-center gap-flex-col-2">
-                        <div class="rounded-1 border" style="height: 14px; width: 14px;"></div>
-                        <div>$white</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><code>black</code></td>
-                    <td class="d-flex d-items-center gap-flex-col-2">
-                        <div class="bg-black rounded-1" style="height: 14px; width: 14px;"></div>
-                        <div>$black</div>
                     </td>
                 </tr>
             </tbody>
@@ -715,8 +690,6 @@
 </div>
 
 <div class="d-none d-xl-block py-6 col-xl-2 position-sticky d-self-flex-start pl-xl-5" style="top: 40px;">
-    <h6 class="text-weight-normal">In this section</h6>
-    <hr class="divider">
     <div class="d-flex flex-col gap-flex-2">
         <a class="h6 text-decoration-none text-weight-light" href="#colorDefault">Color Default</a>
         <a class="h6 text-decoration-none text-weight-light" href="#grayTint">Gray Tint</a>
@@ -729,17 +702,12 @@
 </div>
 
             </div>
-
         </main>
 
         
-<footer class="py-5 px-3 bg-gray-700 d-self-flex-end bottom-0">
+<footer class="bg-gray-050 d-self-flex-end bottom-0" style="height: 100px">
     <div class="container-lg container-xl pt-3">
-        <div class="d-grid gap-row-1 gray-400">
-            <div class="d-flex gap-flex-col-2"><span>v 1.0.0</span>·&nbsp;<a href="https://github.com/mileeme/cocobits" target="_blank">Github</a></div>
-            <div><span>Licensed under MIT</span></div>
-            <div><span>Built using <a href="https://github.com/mileeme/cocobits" target="_blank">Cocobits</a> quick start</span></div>
-        </div>
+        <p>Coco is best dog. @ 2021 Milee Yu.</p>
     </div>
 </footer>
     </body>

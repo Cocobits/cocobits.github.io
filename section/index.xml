@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sections on Cocobits Design System</title>
+    <link>https://cocobits.github.io/section/</link>
+    <description>Recent content in Sections on Cocobits Design System</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://cocobits.github.io/section/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Color | Cocobits Design System</title>
+      <link>https://cocobits.github.io/section/color/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cocobits.github.io/section/color/</guid>
+      <description>Color Cocobits offers three tints to use for many use cases and default color utility classes meet WCAG&#39;s AAA standards. Colors can be applied to backgrounds, texts and borders.
+ Class value Color variable    color-text-primary  $gray-700    color-text-secondary  $gray-500    color-text-tertiary  $gray-300    color-text-link  $blue-300    color-text-error  $red-400    color-bg-light  $gray-050    color-bg-dark  $blue-700    color-bg-info  $blue-050    color-bg-error  $red-050    color-border-primary  $gray-200     color-text-primary color-text-secondary color-text-tertiary color-text-link color-text-error color-bg-light color-bg-dark color-text-tertiary color-bg-info color-bg-error color-text-error color-border-primary color-border-error color-text-error     &amp;lt;div class=&#34;</description>
+    </item>
+    
+    <item>
+      <title>Content | Cocobits Design System</title>
+      <link>https://cocobits.github.io/section/content/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cocobits.github.io/section/content/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Layout | Cocobits Design System</title>
+      <link>https://cocobits.github.io/section/layout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cocobits.github.io/section/layout/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spacing | Cocobits Design System</title>
+      <link>https://cocobits.github.io/section/spacing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cocobits.github.io/section/spacing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Typography | Cocobits Design System</title>
+      <link>https://cocobits.github.io/section/typography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cocobits.github.io/section/typography/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

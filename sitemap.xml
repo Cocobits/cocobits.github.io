@@ -11,11 +11,27 @@
   </url>
   
   <url>
-    <loc>https://cocobits.github.io/</loc>
+    <loc>https://cocobits.github.io/color/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cocobits.github.io/content/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cocobits.github.io/layout/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cocobits.github.io/spacing/</loc>
   </url>
   
   <url>
     <loc>https://cocobits.github.io/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cocobits.github.io/typography/</loc>
   </url>
   
 </urlset>

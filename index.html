@@ -4,9 +4,9 @@
     <head>
 	<meta name="generator" content="Hugo 0.80.0" />
         <meta charset="UTF-8">
-<meta name="title" content="Cocobits Design System">
-<meta name="description" content="">
-<meta name="keywords" content="">
+<meta name="title" content="Cocobits | Cocobits Design System">
+<meta name="description" content="Cocobits design system documentation">
+<meta name="keywords" content="[cocobits, css, design-system, oocss, functional css, responsive, framework]">
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
 <meta http-equiv='Cache-Control' content='no-cache'>
 <meta http-equiv='imagetoolbar' content='no'>
 
-<title>Cocobits Design System</title>
+<title>Cocobits | Cocobits Design System</title>
 
 
 
@@ -29,11 +29,16 @@
     <body>
         
 <header class="py-3 px-3 bg-gray-700 gray-300">
-    <div class="container-lg container-xl d-grid grid-flow-col">
-        <a class="text-decoration-none" href="https://cocobits.github.io/">Cocobits</a>
-        <div class="d-grid grid-flow-col d-justify-end gap-3">
-            <a class="text-decoration-none text-weight-light" href="https://cocobits.github.io/">Getting Started</a>
-            <a class="text-decoration-none text-weight-light" href="https://github.com/mileeme/cocobits" target="_blank">Github</a>
+    <div class="container-lg container-xl">
+        <div class="d-grid grid-flow-col d-items-center">
+            <div class="d-flex d-items-center gap-flex-col-3">
+                <img class="height-5" src="https://cocobits.github.io/assets/cocobits_light_64px.png" alt="Cocobits icon">
+                <a class="text-decoration-none" href="https://cocobits.github.io/"><span class="h4 text-weight-normal white" style="letter-spacing: .05rem;">Cocobits</span></a>
+            </div>
+            <div class="d-grid grid-flow-col d-justify-end gap-6">
+                <a class="text-decoration-none text-weight-light" href="https://github.com/mileeme/cocobits"
+                    target="_blank">Github</a>
+            </div>
         </div>
     </div>
 </header>
@@ -47,13 +52,15 @@
 </nav>
 
         
-        <main style="min-height: calc(100vh - 120px)">
+        <main  class="mx-3">
             
-            <div class="container-lg container-xl mx-3 d-md-flex gap-xl-col-3 position-relative">
+            
+            <div class="container-lg container-xl d-md-flex gap-xl-col-3 position-relative">
+                
                 
                 <nav class="py-6 d-none d-md-block col-md-3 col-xl-2 zindex-md-01 position-sticky d-self-flex-start" style="top: 40px;">
-                    <div class="d-grid grid-flow-row d-container-center gap-row-2">
-                        <a class="h6 text-decoration-none is--active" href="https://cocobits.github.io/">Getting Started</a>
+                    <div id="sideNav" class="d-grid grid-flow-row d-container-center gap-row-2">
+                        <a class="h6 text-decoration-none" href="https://cocobits.github.io/">Getting Started</a>
                         <a class="h6 text-decoration-none" href="/layout">Layout</a>
                         <a class="h6 text-decoration-none" href="/spacing">Spacing</a>
                         <a class="h6 text-decoration-none" href="/typography">Typography</a>
@@ -61,19 +68,74 @@
                         <a class="h6 text-decoration-none" href="/color">Color</a>
                         <div class="h6 text-decoration-none gray-300">Components <span
                                 class="bg-blue-050 blue-200 text-small py-1 px-2 rounded-4">Soon</span></div>
-                        <div class="h6 text-decoration-none gray-300">Animation <span
+                        <div class="h6 text-decoration-none gray-300">Functions <span
                                 class="bg-blue-050 blue-200 text-small py-1 px-2 rounded-4">Soon</span></div>
                     </div>
                 </nav>
                 
                 
+                
+    <div class="py-6 col-md-9 col-xl-7">
+    <section id="intro" class="anchor">
+        <h1>Introduction</h1>
+        <p class="text-lead">Cocobits is a foundational system that empowers designers to build elegant user experiences.
+            Responsive, interchangeable utility classes allow flexibility, consistency and ease-of-use for any web
+            applications. Influenced by
+            Object-Oriented CSS principles and functional CSS, Cocobits uses SASS variables and mixins and strives to meet
+            the highest WCAG accessibility standards.</p>
+    </section>
+
+    <!-- highlights -->
+    <section>
+        <h2>Highlights</h2>
+        <hr class="divider">
+        <ul>
+            <li>Responsive, mobile-first and accessible by default</li>
+            <li>Flexible and interchangeable utility classes</li>
+            <li>Base-8 spacing for consistency and dynamic vertical and horizontal rhythm</li>
+            <li>Font-size, line-height and weight options for readability</li>
+            <li>Color system for meaningful content and interaction signals</li>
+        </ul>
+    </section>
+
+    <section id="install" class="anchor">
+        <h2>Install</h2>
+        <hr class="divider">
+        <h3 class="text-weight-light">npm</h3>
+        <p>After installing npm and node, you can install <kbd>cocobits</kbd> with command:</p>
+<pre>
+$ npm install cocobits
+</pre>
+
+        <h3 class="mt-5 text-weight-light">Quick Start</h3>
+        <p>Include the following link in the head of your base HTML file:</p>
+<pre>
+&lt;link <span class="pre-attribute">rel</span>="<span class="pre-value">stylesheet</span>" <span class="pre-attribute">href</span>="<span class="pre-value">https://unpkg.com/cocobits/css/cocobits.min.css</span>"&gt;
+</pre>
+    </section>
+</div>
+
+<div class="d-none d-xl-block py-6 col-xl-2 position-sticky d-self-flex-start pl-xl-5" style="top: 40px;">
+    <h6 class="text-weight-normal">In this section</h6>
+    <hr class="divider">
+    <div class="d-flex flex-col gap-flex-2">
+        <a class="h6 text-decoration-none text-weight-light" href="#intro">Intro</a>
+        <a class="h6 text-decoration-none text-weight-light" href="#install">Install</a>
+    </div>
+</div>
+
             </div>
+
         </main>
 
         
-<footer class="bg-gray-050 d-self-flex-end bottom-0" style="height: 100px">
+<footer class="py-5 px-3 bg-gray-700 d-self-flex-end bottom-0">
     <div class="container-lg container-xl pt-3">
-        <p>Coco is best dog. @ 2021 Milee Yu.</p>
+        <div class="d-grid gap-row-1 gray-400">
+            <div class="d-flex gap-flex-col-2"><span>v 1.0.0</span>·&nbsp;<a href="https://github.com/mileeme/cocobits" target="_blank">Github</a></div>
+            <div><span>Licensed under MIT</span></div>
+            <div><span>Built using <a href="https://github.com/mileeme/cocobits" target="_blank">Cocobits</a> quick start</span></div>
+        </div>
     </div>
 </footer>
     </body>
