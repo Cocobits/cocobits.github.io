@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+<meta name="title" content="Components | Cocobits Design System">
+<meta name="description" content="Cocobits design system documentation">
+<meta name="keywords" content="[cocobits, css, design-system, oocss, functional css, responsive, framework]">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta http-equiv='Expires' content='0'>
+<meta http-equiv='Pragma' content='no-cache'>
+<meta http-equiv='Cache-Control' content='no-cache'>
+<meta http-equiv='imagetoolbar' content='no'>
+
+<title>Components | Cocobits Design System</title>
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/cocobits/dist/css/cocobits.min.css">
+
+
+<link rel="stylesheet" href="/css/main.css">
+    </head>
+
+    <body>
+        
+<header class="position-sticky top-0 zindex-02 position-md-relative py-3 px-3 bg-gray-700 gray-300">
+    <div class="container-lg container-xl">
+        <div class="d-grid grid-flow-col d-items-center">
+            <div class="d-flex d-items-center gap-flex-col-3">
+                <img class="height-5" src="https://cocobits.github.io/assets/cocobits_light_64px.png" alt="Cocobits icon">
+                <a class="text-decoration-none" href="https://cocobits.github.io/"><span class="h4 text-weight-normal white" style="letter-spacing: .05rem;">Cocobits</span></a>
+            </div>
+            <div class="d-grid grid-flow-col d-justify-end gap-3">
+                <a id="dropdownButton" class="d-md-none py-1 px-3"><span class="dropdown-button d-self-center d-block"></span></a>
+                <a class="d-none d-md-inline text-decoration-none text-weight-light" href="https://github.com/mileeme/cocobits"
+                    target="_blank">Github</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="dropdownMenu"
+        class="is--hidden dropdown-menu position-absolute zindex-02 bg-white rounded box-shadow-2 d-grid right-0 left-0 mx-2 mt-4">
+        <a class="d-grid d-items-center height-7 pl-3 text-decoration-none" href="https://cocobits.github.io/">Getting Started</a>
+        <a class="d-grid d-items-center height-7 pl-3 text-decoration-none" href="/layout">Layout</a>
+        <a class="d-grid d-items-center height-7 pl-3 text-decoration-none" href="/spacing">Spacing</a>
+        <a class="d-grid d-items-center height-7 pl-3 text-decoration-none" href="/typography">Typography</a>
+        <a class="d-grid d-items-center height-7 pl-3 text-decoration-none" href="/content">Content</a>
+        <a class="d-grid d-items-center height-7 pl-3 mb-2 text-decoration-none" href="/color">Color</a>
+        <a class="d-grid d-items-center height-7 pl-3 mb-2 text-decoration-none" href="/components">Components</a>
+        <hr>
+        <a class="d-grid d-items-center height-7 pl-3 mt-2 text-decoration-none" href="https://github.com/mileeme/cocobits"
+            target="_blank">Github</a>
+    </div>
+</header>
+
+
+
+<nav class="d-none d-md-block position-sticky top-0 zindex-02 blur-4 bg-opacity-white-7">
+    <div class="py-2 px-3 border-bottom">
+        <div class="container-lg container-xl"><span class="h5 text-weight-light">Design System Documentation</span>
+        </div>
+    </div>
+</nav>
+
+        
+        <main  class="mx-3">
+            
+            
+            <div class="container-lg container-xl d-md-flex gap-xl-col-3 position-relative">
+                
+                
+                <nav class="py-6 d-none d-md-block col-md-3 col-xl-2 zindex-md-01 position-sticky d-self-flex-start" style="top: 40px;">
+                    <div id="sideNav" class="d-grid grid-flow-row d-container-center gap-row-2">
+                        <a class="h6 text-decoration-none" href="https://cocobits.github.io/">Getting Started</a>
+                        <a class="h6 text-decoration-none" href="/layout">Layout</a>
+                        <a class="h6 text-decoration-none" href="/spacing">Spacing</a>
+                        <a class="h6 text-decoration-none" href="/typography">Typography</a>
+                        <a class="h6 text-decoration-none" href="/content">Content</a>
+                        <a class="h6 text-decoration-none" href="/color">Color</a>
+                        <a class="h6 text-decoration-none" href="/components">Components</a>
+                        
+                        <div class="h6 text-decoration-none gray-300">Iconography <span
+                                class="bg-blue-050 blue-200 text-small py-1 px-2 rounded-4">Soon</span></div>
+                    </div>
+                </nav>
+                
+                
+                
+<div class="py-6 col-md-9 col-xl-7">
+  <section>
+    <h1>Components</h1>
+  </section>
+
+  
+  <section id="button" class="anchor">
+    <h2>Button</h2>
+    <hr class="divider">
+    <p>Buttons come in three sizes and button variations such as <code>btn-primary</code>'s default color can be overridden by setting new property values in the <code>:root</code> of your custom <kbd>css</kbd> file.</p>
+    <table class="width-full table-border-collapse my-3">
+      <thead>
+        <tr class="border-bottom">
+          <th class="text-weight-semibold">Class value</th>
+          <th class="text-weight-semibold">Property/Customizable style</th>
+        </tr>
+      </thead>
+      <tbody class="h6 text-weight-normal divider-row">
+        <tr>
+          <td><code>btn-sm</code></td>
+          <td>height: 32px<br>padding: 0 16px</td>
+        </tr>
+        <tr>
+          <td><code>btn-md</code></td>
+          <td>height: 40px<br>padding: 0 24px</td>
+        </tr>
+        <tr>
+          <td><code>btn-lg</code></td>
+          <td>height: 48px<br>padding: 0 32px</td>
+        </tr>
+        <tr>
+          <td><code>btn-primary</code></td>
+          <td>border-radius: var(--btn-primary-border-radius, $rounded)<br>color: var(--btn-primary-text, $white)<br>background: var(--btn-primary-bg, $blue-300)</td>
+        </tr>
+        <tr>
+          <td><code>btn-primary</code> (hover)</td>
+          <td>color: var(--btn-primary-text-hover, $white)</td>
+          <td>background: var(--btn-primary-bg-hover, $blue-500)</td>
+        </tr>
+        <tr>
+          <td><code>btn-secondary</code></td>
+          <td>border: var(--btn-secondary-border, 1px solid $gray-500)<br>border-radius: var(--btn-secondary-border-radius, $rounded)<br>color: var(--btn-secondary-text, $gray-500)</td>
+        </tr>
+        <tr>
+          <td><code>btn-secondary</code> (hover/active state)</td>
+          <td>background: var(--btn-secondary-bg-hover, $gray-500)<br>color: var(--btn-secondary-text-hover, $white)</td>
+        </tr>
+        <tr>
+          <td><code>link-underline</code></td>
+          <td>color: var(--link-underline-text, $gray-500)<br>border-bottom: var(--link-underline-border, 2px solid $gray-500)</td>
+        </tr>
+        <tr>
+          <td><code>link-underline</code> (hover/active state)</td>
+          <td>color: var(--link-underline-text-hover, $blue-300)<br>border-bottom: var(--link-underline-border, 2px solid $blue-300)</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="p-3 border rounded">
+      <div class="d-grid grid-flow-row gap-row-3">
+        <div class="d-flex flex-col flex-sm-row gap-flex-row-1 d-justify-evenly d-items-center">
+          <button class="btn-primary btn-sm">btn-primary sm</button>
+          <button class="btn-primary btn-md">btn-primary md</button>
+          <button class="btn-primary btn-lg">btn-primary lg</button>
+        </div>
+        <div class="d-flex flex-col flex-sm-row gap-flex-row-1 d-justify-evenly d-items-center">
+          <button class="btn-secondary btn-sm">btn-secondary sm</button>
+          <button class="btn-secondary btn-md">btn-secondary md</button>
+          <button class="btn-secondary btn-lg">btn-secondary lg</button>
+        </div>
+        <div class="d-flex flex-col flex-sm-row gap-flex-row-1 d-justify-evenly d-items-center">
+          <a class="link-underline">link-underline</a>
+        </div>
+      </div>
+    </div>
+<pre>
+&lt;button <span class="pre-attribute">class</span>="<span class="pre-value">btn-primary btn-md</span>"&gt;btn-primary md&lt;/button&gt;
+&lt;a <span class="pre-attribute">class</span>="<span class="pre-value">link-underline</span>"&gt;link-underline&lt;/a&gt;
+</pre>
+
+  <h3 class="mt-6 text-weight-light">CSS customization</h3>
+  <p>To override the default settings of the buttons, simply set a new style for the button property values in your custom <kbd>CSS</kbd> file. View the example below:</p>
+<pre>
+// Your Custom CSS File
+:root {
+  --btn-primary-bg: (your custom background-color);
+  --btn-primary-bg-hover: (your custom hover background-color);
+  --btn-primary-border-radius: (your custom border-radius);
+  --btn-primary-text: (your custom color)
+  --btn-secondary-border: (your custom border color);
+  --btn-secondary-border-radius: (your custom border-radius);
+  --btn-secondary-text: (your custom color);
+  --btn-secondary-bg-hover: (your custom background color);
+  --btn-secondary-text-hover: (your custom color);
+  --link-underline-text: (your custom color);
+  --link-underline-border: (your custom border color);
+  --link-underline-hover: (your custom color);
+  --link-underline-border-hover: (your customer border color);
+}
+</pre>  
+  </section>
+
+  
+  <section id="input" class="anchor">
+    <h2>Input</h2>
+    <hr class="divider">
+    <table class="width-full table-border-collapse my-3">
+      <thead>
+        <tr class="border-bottom">
+          <th class="text-weight-semibold">Class value</th>
+          <th class="text-weight-semibold">Property style</th>
+        </tr>
+      </thead>
+      <tbody class="h6 text-weight-normal divider-row">
+        <tr>
+          <td><code>input-sm</code></td>
+          <td>height: 32px<br>padding: 0 8px</td>
+        </tr>
+        <tr>
+          <td><code>input-md</code></td>
+          <td>height: 40px<br>padding: 0 8px</td>
+        </tr>
+        <tr>
+          <td><code>input-lg</code></td>
+          <td>height: 48px<br>padding: 0 8px</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="p-3 border rounded">
+      <div class="d-flex flex-col gap-flex-row-1 d-justify-evenly d-items-center">
+        <input type="email" placeholder="input-sm" class="input-sm width-full">
+        <input type="email" placeholder="input-md" class="input-md width-full">
+        <input type="email" placeholder="input-lg" class="input-lg width-full">
+      </div>
+    </div>
+<pre>
+&lt;input <span class="pre-attribute">class</span>="<span class="pre-value">input-sm</span>"&gt;
+</pre>
+  </section>
+
+  
+  <section id="tabs" class="anchor">
+    <h2>Tabs</h2>
+    <p>Tabs are great for organizing content and consist of two parts: <code>tab-menu</code> and its corresponding content, <code>tab-contents</code>. To match the tab link to its content, simply use the same value for the <kbd>data-tab</kbd> as shown below. Override the default color of the tab menu links by setting a new property value in the <code>:root</code> of your custom <kbd>CSS</kbd> file.</p>
+    <hr class="divider">
+    <table class="width-full table-border-collapse my-3">
+      <thead>
+        <tr class="border-bottom">
+          <th class="text-weight-semibold">Class value</th>
+          <th class="text-weight-semibold">Applies to</th>
+          <th class="text-weight-semibold">Customizable style</th>
+        </tr>
+      </thead>
+      <tbody class="h6 text-weight-normal divider-row">
+        <tr>
+          <td><code>tab-menu</code></td>
+          <td>menu container</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td><code>tab-menu</code></td>
+          <td>menu link active</td>
+          <td>color: var(--tab-link, $blue-300)<br>border-bottom: var(--tab-link-border-bottom, 2px solid $blue-300)</td>
+        </tr>
+        <tr>
+          <td><code>tab-contents</code></td>
+          <td>container for content</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="p-3 border rounded">
+      <div class="tab-menu">
+        <a data-tab="one">tab-menu #1</a>
+        <a data-tab="two">tab-menu #2</a>
+        <a data-tab="three">tab-menu #3</a>
+      </div>
+      <div class="tab-contents">
+        <div data-tab="one">
+          <p>tab-content #1</p>
+          <p>Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus
+          ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus
+          varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur rdata-tabiculus mus.
+          Etiam porta sem malesuada magna mollis euismod.</p>
+        </div>
+        <div data-tab="two">
+          <p>tab-content #2</p>
+          <p>Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus
+          ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget
+          risus.</p>
+        </div>
+        <div data-tab="three">
+          <p>tab-content #3</p>
+          <p>Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus,
+          tellusac cursus commodo.</p>
+        </div>
+      </div>
+    </div>
+<pre>
+&lt;!-- Tab menu container -->
+&lt;div <span class="pre-attribute">class</span>="<span class="pre-value">tab-menu</span>"&gt;
+  &lt;a <span class="pre-attribute">data-tab</span>="<span class="pre-value">one</span>"&gt;tab-menu #1&lt;/a&gt;
+  ...
+&lt;/div&gt;
+
+&lt;!-- Tab contents container -->
+&lt;div <span class="pre-attribute">class</span>="<span class="pre-value">tab-contents</span>"&gt;
+  &lt;div <span class="pre-attribute">data-tab</span>="<span class="pre-value">one</span>"&gt;tab-content #1&lt;/div&gt;
+  ...
+&lt;/div&gt;
+</pre>
+<pre>
+// Your Custom CSS File
+:root {
+  --tab-menu: (your custom menu color);
+  --tab-menu-border-bottom: (your custom menu border color);
+}
+</pre>
+  </section>
+
+  
+  <section id="accordion" class="anchor">
+    <h2>Accordion</h2>
+    <hr class="divider">
+    <p>The accordion component provides a way to organize content by topic and consists of two parts: the button takes on the class <code>accordion</code> and plus sign <code>plus</code> and the content which takes on the class <code>accordion-content</code>. The accordion is responsive and stacked vertically by default.</p>
+    <table class="width-full table-border-collapse my-3">
+      <thead>
+        <tr class="border-bottom">
+          <th class="text-weight-semibold">Class value</th>
+          <th class="text-weight-semibold">Applies to</th>
+          <th class="text-weight-semibold">Customizable style</th>
+        </tr>
+      </thead>
+      <tbody class="h6 text-weight-normal divider-row">
+        <tr>
+          <td><code>accordion</code></td>
+          <td>button</td>
+          <td>background-color: var(--accordion-bg, $gray-100)</td>
+        </tr>
+        <tr>
+          <td><code>accordion</code></td>
+          <td>button active</td>
+          <td>background-color: var(--accordion-bg-active, $gray-200)</td>
+        </tr>
+        <tr>
+          <td><code>plus</code></td>
+          <td>button</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td><code>accordion-content</code></td>
+          <td>content</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="p-3 border rounded">
+      <button class="accordion">accordion 1<div class="plus"></div></button>
+      <div class="accordion-content">accordion content 1</div>
+      <button class="accordion">accordion 2<div class="plus"></div></button>
+      <div class="accordion-content">accordion content 2</div>
+    </div>
+<pre>
+&lt;button <span class="pre-attribute">class</span>="<span class="pre-value">accordion</span>"&gt;accordion 1&lt;div <span class="pre-attribute">class</span>="<span class="pre-value">plus</span>"&gt;&lt;/div&gt;&lt;/button&gt;
+&lt;div <span class="pre-attribute">class</span>="<span class="pre-value">accordion-content</span>"&gt;accordion content 1&lt;/div&gt;
+</pre>
+<pre>
+// Your Custom CSS File
+:root {
+  --accordion-bg: (your custom accordion color);
+  --accordion-bg-active: (your custom accordion active color);
+}
+</pre>
+  </section>
+
+  
+  <section id="carousel" class="anchor">
+    <h2>Carousel</h2>
+    <hr class="divider">
+    <p>The carousel component is designed to display multiple images for ecommerce application. The carousel is responsive by default and offers three ways to navigate the images. Swipe and arrow controllers move the slide one at a time while the bottom navigation allows you to get to a specific slide location.</p>
+    <p>The height of the carousel is based on the height of the first image and vertically center aligned. This means subsequent images with greater height will be automatically cropped on the top and bottom.</p>
+    <p>As a best practice, make sure all images have consistent size ratios. Though the <code>slide-prev</code>,
+      <code>slide-next</code> as well as <code>slide-nav</code> utility classes provide multiple means of navigating the
+      slides, for best user experience, implement just one navigation option. Override the default styles by setting new
+      property values in the <code>:root</code> of your custom <kbd>CSS</kbd> file.
+    </p>
+    <table class="width-full table-border-collapse my-3">
+      <thead>
+        <tr class="border-bottom">
+          <th class="text-weight-semibold">Class value</th>
+          <th class="text-weight-semibold">Applies to</th>
+          <th class="text-weight-semibold">Customizable style</th>
+        </tr>
+      </thead>
+      <tbody class="h6 text-weight-normal divider-row">
+        <tr>
+          <td><code>carousel</code></td>
+          <td>container for carousel</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td><code>slide-container</code></td>
+          <td>container for slides</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td><code>slide</code></td>
+          <td>image</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td><code>slide-prev</code></td>
+          <td>left arrow controller</td>
+          <td>border: var(--arrow-border, 1px solid $gray-300)<br>border-width: var(--arrow-border-width, 0 2px 2px 0)<br>width: width: var(--arrow-width, 16px)<br>height: height: var(--arrow-height, 16px)</td>
+        </tr>
+        <tr>
+          <td><code>next</code></td>
+          <td>right arrow controller</td>
+          <td>border: var(--arrow-border, 1px solid $gray-300)<br>border-width: var(--arrow-border-width, 0 2px 2px 0)<br>width: width: var(--arrow-width, 16px)<br>height: height: var(--arrow-height, 16px)</td>
+        </tr>
+        <tr>
+          <td><code>slide-prev</code> / <code>slide-next</code></td>
+          <td>controller hover</td>
+          <td>border: var(--arrow-border-hover, 1px solid $gray-400)</td>
+        </tr>
+        <tr>
+          <td><code>slide-nav-container</code></td>
+          <td>container for navigation</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td><code>slide-nav</code></td>
+          <td>navigation</td>
+          <td>width: var(--slide-nav-width, 16px)<br>height: var(--slide-nav-height, 16px)<br>border-radius: var(--slide-nav-border-radius, 50%)<br>background: var(--slide-nav-bg, $gray-200)</td>
+        </tr>
+        <tr>
+          <td><code>slide-nav</code></td>
+          <td>navigation active</td>
+          <td>background: var(--slide-nav-bg--active, $gray-500)</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div class="carousel">
+      
+      <div class="slide-prev ml-3"></div>
+      <div class="slide-next mr-3"></div>
+
+      
+      <div class="slide-container">
+
+        
+        <img  class="slide" 
+              src="https://images.unsplash.com/photo-1429516387459-9891b7b96c78?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80"
+              srcset="https://images.unsplash.com/photo-1429516387459-9891b7b96c78?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80 1500w"
+              sizes="(max-width: 700px) 1500w"
+              alt="Yosemite valley slide 1">
+        <img  class="slide" 
+              src="https://images.unsplash.com/photo-1516622484907-f20f21efa97d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100v&q=80"
+              srcset="https://images.unsplash.com/photo-1516622484907-f20f21efa97d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80 1500w"
+              sizes="(max-width: 700px) 1500w"
+              alt="Yosemite valley slide 2">
+        <img  class="slide" 
+              src="https://images.unsplash.com/photo-1526838223946-b4db99314705?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80" 
+              srcset="https://images.unsplash.com/photo-1526838223946-b4db99314705?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80 1500w"
+              sizes="(max-width: 700px) 1500w"
+              alt="Yosemite valley slide 3">
+      </div>
+      
+      <div class="slide-nav-container">
+        <div class="slide-nav"></div>
+        <div class="slide-nav"></div>
+        <div class="slide-nav"></div>
+      </div>
+    </div>
+<pre>
+&lt;!-- Carousel container -->
+&lt;div <span class="pre-attribute">class</span>="<span class="pre-value">carousel</span>"&gt;
+  
+  &lt;!-- Controllers -->
+  // You can omit the controllers 
+  &lt;div <span class="pre-attribute">class</span>="<span class="pre-value">slide-prev ml-3</span>"&gt;&lt;/div&gt;
+  &lt;div <span class="pre-attribute">class</span>="<span class="pre-value">slide-next mr-3</span>"&gt;&lt;/div&gt;
+
+  &lt;!-- Slides container -->
+  &lt;div <span class="pre-attribute">class</span>="<span class="pre-value">slide-container</span>"&gt;
+    &lt;!-- Slides -->
+    &lt;img <span class="pre-attribute">class</span>="<span class="pre-value">slide</span>" src="#" alt="Image for Carousel"&gt;
+    ...
+  &lt;/div&gt;
+
+  &lt;!-- Navigation container -->
+  // You can omit the navigation
+  &lt;div <span class="pre-attribute">class</span>="<span class="pre-value">slide-nav-container</span>"&gt;
+    &lt;!-- Navigation items -->
+    &lt;div <span class="pre-attribute">class</span>="<span class="pre-value">slide-nav</span>"&gt;&lt;/div&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<pre>
+  // Your Custom CSS File
+  :root {
+  --arrow-border: (Your custom border);
+  --arrow-border-width: (Your custom border width);
+  ...
+  }
+</pre>
+  </section>
+  
+</div>
+
+
+<div class="d-none d-xl-block py-6 col-xl-2 position-sticky d-self-flex-start pl-xl-5" style="top: 40px;">
+  <h6 class="text-weight-normal">In this section</h6>
+  <hr class="divider">
+  <div class="d-flex flex-col gap-flex-2">
+    <a class="h6 text-decoration-none text-weight-light" href="#button">Button</a>
+    <a class="h6 text-decoration-none text-weight-light" href="#input">Input</a>
+    <a class="h6 text-decoration-none text-weight-light" href="#tabs">Tabs</a>
+    <a class="h6 text-decoration-none text-weight-light" href="#accordion">Accordion</a>
+    <a class="h6 text-decoration-none text-weight-light" href="#carousel">Carousel</a>
+  </div>
+</div>
+
+
+<script src="https://unpkg.com/cocobits/dist/js/cocobits.min.js" type="text/javascript"></script>
+
+            </div>
+
+        </main>
+
+        
+<footer class="py-5 px-3 bg-gray-700 d-self-flex-end bottom-0">
+    <div class="container-lg container-xl pt-3">
+        <div class="d-grid gap-row-1 gray-400">
+            <div class="d-flex gap-flex-col-2"><span>v 2.1.0</span>·&nbsp;<a href="https://github.com/mileeme/cocobits" target="_blank">Github</a>·&nbsp;<a href="https://www.npmjs.com/package/cocobits" target="_blank">npm</a></div>
+            <div><span>Licensed under MIT</span></div>
+            <div><span>Built using <a href="https://github.com/mileeme/cocobits" target="_blank">Cocobits</a> and designed by Milee Yu</span></div>
+        </div>
+    </div>
+</footer>
+    </body>
+    <script src="/js/main.js"></script>
+</html>

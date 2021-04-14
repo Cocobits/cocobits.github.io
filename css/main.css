@@ -1,5 +1,8 @@
+:root {
+}
+
 .anchor {
-    scroll-margin-top: 64px;
+  scroll-margin-top: var(--anchor-scroll-margin-top, 64px);
 }
 
 .dropdown-button {

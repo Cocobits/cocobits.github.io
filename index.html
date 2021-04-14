@@ -20,7 +20,7 @@
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/cocobits/css/cocobits.min.css">
+<link rel="stylesheet" href="https://unpkg.com/cocobits/dist/css/cocobits.min.css">
 
 
 <link rel="stylesheet" href="/css/main.css">
@@ -52,6 +52,7 @@
         <a class="d-grid d-items-center height-7 pl-3 text-decoration-none" href="/typography">Typography</a>
         <a class="d-grid d-items-center height-7 pl-3 text-decoration-none" href="/content">Content</a>
         <a class="d-grid d-items-center height-7 pl-3 mb-2 text-decoration-none" href="/color">Color</a>
+        <a class="d-grid d-items-center height-7 pl-3 mb-2 text-decoration-none" href="/components">Components</a>
         <hr>
         <a class="d-grid d-items-center height-7 pl-3 mt-2 text-decoration-none" href="https://github.com/mileeme/cocobits"
             target="_blank">Github</a>
@@ -82,9 +83,9 @@
                         <a class="h6 text-decoration-none" href="/typography">Typography</a>
                         <a class="h6 text-decoration-none" href="/content">Content</a>
                         <a class="h6 text-decoration-none" href="/color">Color</a>
-                        <div class="h6 text-decoration-none gray-300">Components <span
-                                class="bg-blue-050 blue-200 text-small py-1 px-2 rounded-4">Soon</span></div>
-                        <div class="h6 text-decoration-none gray-300">Functions <span
+                        <a class="h6 text-decoration-none" href="/components">Components</a>
+                        
+                        <div class="h6 text-decoration-none gray-300">Iconography <span
                                 class="bg-blue-050 blue-200 text-small py-1 px-2 rounded-4">Soon</span></div>
                     </div>
                 </nav>
@@ -126,8 +127,12 @@ $ npm install cocobits
         <h3 class="mt-5 text-weight-light">Quick Start</h3>
         <p>Include the following link in the head of your base HTML file:</p>
 <pre>
-&lt;link <span class="pre-attribute">rel</span>="<span class="pre-value">stylesheet</span>" <span class="pre-attribute">href</span>="<span class="pre-value">https://unpkg.com/cocobits/css/cocobits.min.css</span>"&gt;
+&lt;link <span class="pre-attribute">rel</span>="<span class="pre-value">stylesheet</span>" <span class="pre-attribute">href</span>="<span class="pre-value">https://unpkg.com/cocobits/dist/css/cocobits.min.css</span>"&gt;
 </pre>
+        <p>To use the JavaScript enabled components utility classes, include the following link before the <code>&lt;/body&gt;</code> tag of your base HTML file:</p>
+<pre>
+&lt;script <span class="pre-attribute">src</span>="<span class="pre-value">https://unpkg.com/cocobits/dist/js/cocobits.min.js</span>"&gt;&lt;/script&gt;
+</pre>      
     </section>
 </div>
 
@@ -148,7 +153,7 @@ $ npm install cocobits
 <footer class="py-5 px-3 bg-gray-700 d-self-flex-end bottom-0">
     <div class="container-lg container-xl pt-3">
         <div class="d-grid gap-row-1 gray-400">
-            <div class="d-flex gap-flex-col-2"><span>v 1.1.7</span>·&nbsp;<a href="https://github.com/mileeme/cocobits" target="_blank">Github</a>·&nbsp;<a href="https://www.npmjs.com/package/cocobits" target="_blank">npm</a></div>
+            <div class="d-flex gap-flex-col-2"><span>v 2.1.0</span>·&nbsp;<a href="https://github.com/mileeme/cocobits" target="_blank">Github</a>·&nbsp;<a href="https://www.npmjs.com/package/cocobits" target="_blank">npm</a></div>
             <div><span>Licensed under MIT</span></div>
             <div><span>Built using <a href="https://github.com/mileeme/cocobits" target="_blank">Cocobits</a> and designed by Milee Yu</span></div>
         </div>
